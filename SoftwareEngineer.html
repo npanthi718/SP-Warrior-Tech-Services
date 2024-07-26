@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Header -->
+  <header>
+	<link rel="stylesheet" href="styles.css">
+     <href="logo"><img src="logo.png" alt="SP Warrior Tech Services" class="logo">
+<script src="date-day-time.js"></script>
+    <p id="currentDateTime"></p>
+
+</header>
+  <title>FormSoftwareEngineer</title>
+  <style>
+    /* Global Styles */
+
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      color: #333;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #FFD700;
+      color: #000000;
+}
+
+#currentDateTime {
+  font-size: 20px;
+  color: #FFD700;
+  margin-right:20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align:right;
+}
+
+#currentDateTime:hover {
+color:#ff0000;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: #4CAF50;">Apply for Software Engineer Position</h1>
+    <div class="form-container">
+      <form>
+        <label for="name" style=" color: #333;">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="YOUR FULL NAME"  required>
+        
+        <label for="email" style="color: #333;">Email</label>
+        <input type="email" id="email" name="email" placeholder="YOUR EMAIL ADDRESS" required>
+        
+        <label for="phone" style="color: #333;">Phone Number</label>
+        <select id="country-code" style="width: 15%; padding: 10px; border: 1px solid #ccc; border-radius: 20px; margin-bottom: 20px; box-sizing: border-box; font-size: 16px;">
+	  <option value="+977">+977 (Nepal)</option>
+          <option value="+1">+1 (USA)</option>
+          <option value="+44">+44 (UK)</option>
+          <option value="+91">+91 (India)</option>
+        </select>
+        <input type="number" id="number" name="number" placeholder="10 DIGIT NUMBER" style=" padding: 10px; border: 1px solid #ccc; border-radius: 20px; margin-bottom: 20px; box-sizing: border-box; font-size: 16px;" size="20" maxlength="10" required>
+
+	<label for="position" style=" color: #333;">Apply for:</label>
+        <input type="text" id="prewrittenText" name="position" value="Software Engineer" readonly>
+        
+        <label for="resume" style="color: #333;">Upload Resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <label for="cover" style="color: #333;">Upload Cover Letter</label>
+        <input type="file" id="coverletter" name="coverletter" accept=".pdf,.doc,.docx" required>
+
+        
+        <label for="message" style="color: #333;" >Message (Optional)</label>
+        <textarea id="message" name="message" placeholder="SEND THE MESSAGE WHATEVER YOU WANT TO SHARE WITH US" ></textarea>
+
+        
+        <button type="submit" class="btn">Submit Application</button>
+	<button type="reset" class="btn">RESET</button>
+	<a href="index.html" class="btn">Back to Home</a>
+
+      </form>
+    </div>
+  </div><br><br><br>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Redirect to the "Thank You" page after form submission
+      window.location.href = 'response.html';
+    });
+  });
+</script>
+<!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 SP Warrior Tech Services</p>
+    </div>
+  </footer>
+
+</body>
+</html>
