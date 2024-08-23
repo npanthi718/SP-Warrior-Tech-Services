@@ -15,7 +15,7 @@ body {
 
 
 
-}
+
 
 .services-index {
       background-color: #ffccd5;
@@ -149,7 +149,7 @@ header nav ul li a:hover {
 }
 
   
-}
+
 
 .hero p {
   font-size: 20px;
@@ -172,32 +172,60 @@ header nav ul li a:hover {
 
 
 .services {
+  display: flex;
+  margin: auto;
   background-color: #ffccd5;
   padding: 50px 0;
   text-align: center;
   border-radius: 30px;
+  margin: 6px;
+  padding: 10px;
 }
 
 .services h2 {
-  font-size: 36px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 30px;
   margin-bottom: 40px;
 }
 
 .services .container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    width: 90vw;
+    margin: auto;
+    padding: 10px 15px;
+
+   
+   
+   
+    
+
+    
 }
 
 .service-item {
-  width: 30%;
-  margin-bottom: 40px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+ border-radius: 8px;
+}
+
+.service-item:hover {
+  background-color: #ef9fd7;
+  scale: 1.02;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
 .service-item img {
-  width: 100%;
+  width: 50%;
   border-radius: 30px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .service-item h3 {
@@ -208,6 +236,7 @@ header nav ul li a:hover {
 .service-item p {
   font-size: 18px;
 }
+
 
 -------------------------------------------------------------------------------------
 
